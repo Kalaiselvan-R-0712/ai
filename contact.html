@@ -908,7 +908,9 @@ footer{padding:64px 0 22px;border-top:1px solid var(--line);background:#02060d}
 @media (hover:none),(pointer:coarse),(max-width:1024px){
   .contact-info-card,.contact-side,.contact-visit-card,.contact-submit{transition:none!important}
 }
-</style></head><body><div aria-label="Loading Stackly AI &amp; Robotics" id="preloader">
+</style>
+
+</head><body><div aria-label="Loading Stackly AI &amp; Robotics" id="preloader">
 <div class="neural-bg"></div><div class="neural-grid"></div><div class="neural-vignette"></div><div class="neural-scan"></div>
 <div class="neural-shell">
 <div class="neural-top"><span>STACKLY // NEURAL SYSTEM</span><span class="neural-signal"><i></i><b>SYSTEM ONLINE</b></span></div>
@@ -934,10 +936,10 @@ footer{padding:64px 0 22px;border-top:1px solid var(--line);background:#02060d}
 <a href="services.html">Services</a>
 <a href="solutions.html">Solutions</a>
 <a aria-current="page" class="active" href="contact.html">Contact</a>
-<div aria-label="Account actions" class="mobile-nav-actions">
-<a href="login.html">Login</a>
-<a href="register.html">Register</a>
-</div>
+<div class="mobile-nav-actions" aria-label="Account actions">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="register.html">Register</a>
+      </div>
 </nav>
 <div class="nav-actions"><a class="btn btn-ghost" href="login.html">Login</a><a class="btn btn-primary" href="register.html">Register</a><button aria-expanded="false" aria-label="Toggle menu" class="menu"><i class="fa-solid fa-bars"></i></button></div>
 </div>
@@ -1319,4 +1321,6 @@ footerEmail.addEventListener('blur',()=>{if(footerEmail.value.trim())validateFoo
 footerSubscribeForm.addEventListener('submit',event=>{event.preventDefault();if(!validateFooterEmail()){footerEmail.focus();return;}setFooterEmailState('You’re connected. AI & Robotics updates are on their way.','success');footerSubscribeForm.reset();footerEmail.classList.remove('is-valid');setTimeout(()=>{window.location.href='404.html';},450);});
 function resetFooterNewsletter(){footerSubscribeForm.reset();footerEmail.classList.remove('is-valid','is-invalid');footerEmail.removeAttribute('aria-invalid');footerEmailMessage.className='footer-form-message';footerEmailMessage.textContent='';}
 window.addEventListener('pageshow',resetFooterNewsletter);
+
+
 </script></body></html>

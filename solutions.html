@@ -591,6 +591,493 @@ footer{padding:64px 0 22px;border-top:1px solid var(--line);background:#02060d}
 @media (hover:hover) and (pointer:fine) and (min-width:1025px){.orbit-btn{transition:transform .3s ease,box-shadow .3s ease;background:#e9f2f6}.orbit-btn:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(66,220,255,.22)}.orbit-link:hover{color:var(--o-cyan)}.orbit-stack-item{transition:background .3s ease,transform .3s ease}.orbit-stack-item:hover{background:rgba(66,220,255,.055);transform:translateX(8px)}.orbit-field-card:hover img{transform:scale(1.08);filter:grayscale(0) contrast(1.1)}.orbit-field-card:hover .orbit-field-overlay i{color:var(--o-cyan);transform:translate(4px,-4px)}.orbit-cta-btn:hover{color:var(--o-cyan)}.orbit-cta-btn:hover i{transform:translate(5px,-5px)}}
 @media (max-width:1024px){.orbit-hero-content{grid-template-columns:1fr;gap:50px}.orbit-hero-title h1{font-size:clamp(4rem,12vw,7rem)}.orbit-image-wrap{height:62vh}.data-one{left:15px}.data-two{right:15px}.orbit-intro{grid-template-columns:60px 1fr}.orbit-intro-side{grid-column:2;margin-top:30px}.orbit-section-head{grid-template-columns:1fr}.orbit-stack-layout{grid-template-columns:1fr}.orbit-stack-visual{height:520px}.orbit-field-grid{grid-template-columns:1fr 1fr;grid-template-rows:340px 260px}.field-large{grid-row:span 2}.orbit-field-statement{grid-column:1 / -1}.orbit-flow-track{overflow-x:auto;padding-bottom:20px}.orbit-flow-node{width:145px}.orbit-cta{grid-template-columns:60px 1fr;padding:50px}.orbit-cta-btn{grid-column:2;margin-top:35px;width:max-content}}
 @media (max-width:700px){.orbit-hero-inner,.orbit-intro,.orbit-stack,.orbit-field,.orbit-flow-head,.orbit-flow-track,.orbit-cta{width:calc(100% - 30px)}.orbit-hero{min-height:auto}.orbit-hero-inner{padding:25px 0 35px}.orbit-hero-meta span:nth-child(2){display:none}.orbit-hero-content{padding:55px 0 30px}.orbit-hero-title h1{font-size:clamp(3.5rem,17vw,5.8rem)}.orbit-lead{font-size:14px;margin:27px 0}.orbit-hero-actions{align-items:flex-start;flex-direction:column;gap:20px}.orbit-image-wrap{height:68vh;min-height:430px}.orbit-visual-caption{font-size:7px}.orbit-data{transform:scale(.85);transform-origin:bottom left}.data-two{transform-origin:bottom right}.orbit-intro{display:block;padding:90px 0}.orbit-intro-index{margin-bottom:35px}.orbit-intro-main h2,.orbit-section-head h2,.orbit-field-top h2,.orbit-flow-head h2,.orbit-cta h2{font-size:clamp(3rem,14vw,5rem)}.orbit-intro-side{margin-top:60px;padding-left:20px}.orbit-stack{padding:90px 0}.orbit-section-head{margin-bottom:50px}.orbit-stack-layout{gap:45px}.orbit-stack-item{grid-template-columns:28px 1fr 12px;padding:20px 5px}.orbit-stack-item h3{font-size:20px}.orbit-stack-visual{height:430px}.orbit-field{padding:90px 0}.orbit-field-top{display:block;margin-bottom:45px}.orbit-field-top>p:last-child{margin-top:25px}.orbit-field-grid{display:flex;flex-direction:column;gap:14px}.orbit-field-card,.field-large{height:430px}.field-small{height:300px}.orbit-field-statement{min-height:280px}.orbit-flow{padding:90px 0}.orbit-flow-track{margin-top:55px}.orbit-cta{display:block;margin:90px auto;padding:38px 25px;min-height:460px}.orbit-cta-number{margin-bottom:70px}.orbit-cta-btn{margin-top:35px}.line-a{left:8%}.line-b{top:68%}}
+
+/* =========================================================
+   STACKLY SOLUTIONS — FINAL MOBILE FIT / OVERFLOW FIX
+   Desktop layout + desktop-only hover remain unchanged.
+   ========================================================= */
+@media(max-width:700px){
+
+  html,body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden !important;
+  }
+
+  .solutions-main,
+  .solutions-main main{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    overflow:hidden !important;
+  }
+
+  .sol-wrap{
+    width:calc(100% - 28px) !important;
+    max-width:none !important;
+    min-width:0 !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  /* ---------- HERO ---------- */
+  .sol-hero{
+    width:100%;
+    min-height:auto !important;
+    padding:108px 0 58px !important;
+    overflow:hidden !important;
+  }
+
+  .sol-hero-grid{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    display:flex !important;
+    flex-direction:column;
+    gap:28px !important;
+    align-items:stretch;
+  }
+
+  .sol-hero-copy{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    overflow:hidden;
+  }
+
+  .sol-eyebrow{
+    max-width:100%;
+    font-size:.62rem !important;
+    letter-spacing:.17em !important;
+    gap:10px !important;
+    margin-bottom:22px !important;
+    white-space:nowrap;
+  }
+
+  .sol-eyebrow:before{
+    width:38px !important;
+    flex:0 0 38px;
+  }
+
+  .sol-title{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    font-size:clamp(2.28rem,10.8vw,3rem) !important;
+    line-height:.9 !important;
+    letter-spacing:-.065em !important;
+    margin-bottom:23px !important;
+    overflow-wrap:normal !important;
+    word-break:normal !important;
+  }
+
+  .sol-title .ghost{
+    -webkit-text-stroke:.8px rgba(224,235,243,.43);
+  }
+
+  .sol-hero-copy>p{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    font-size:.78rem !important;
+    line-height:1.75 !important;
+    overflow-wrap:break-word;
+  }
+
+  .sol-actions{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    display:flex !important;
+    flex-direction:column;
+    gap:10px !important;
+    margin-top:24px !important;
+  }
+
+  .sol-actions .sol-btn{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    min-height:50px !important;
+    padding:0 15px !important;
+    flex:0 0 auto;
+  }
+
+  /* ---------- HERO VISUAL ---------- */
+  .sol-hero-visual{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    height:335px !important;
+    min-height:335px !important;
+    margin:0 !important;
+    overflow:hidden !important;
+  }
+
+  .sol-visual-frame{
+    left:0 !important;
+    right:0 !important;
+    top:0 !important;
+    width:100% !important;
+    height:320px !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    border-radius:18px !important;
+    clip-path:none !important;
+    overflow:hidden !important;
+  }
+
+  .sol-visual-frame img{
+    width:100% !important;
+    height:100% !important;
+    max-width:none !important;
+    object-fit:cover !important;
+  }
+
+  .sol-data-card{
+    left:0 !important;
+    bottom:0 !important;
+    width:min(205px,70%) !important;
+    max-width:70% !important;
+    padding:14px 15px !important;
+  }
+
+  .sol-data-card strong{
+    font-size:1rem !important;
+  }
+
+  .sol-data-card span{
+    font-size:.64rem !important;
+  }
+
+  .sol-orbit{
+    width:175px !important;
+    height:175px !important;
+    right:-45px !important;
+    bottom:-12px !important;
+  }
+
+  .sol-orbit:before{inset:20px !important}
+  .sol-orbit:after{inset:48px !important}
+
+  /* ---------- COMMON SECTIONS ---------- */
+  .sol-section{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+    padding:68px 0 !important;
+  }
+
+  .sol-section-head{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    display:flex !important;
+    flex-direction:column;
+    gap:17px !important;
+    align-items:stretch !important;
+    margin-bottom:30px !important;
+  }
+
+  .sol-section-head>div,
+  .sol-section-head p{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+
+  .sol-section-head h2{
+    width:100%;
+    max-width:100%;
+    font-size:clamp(2.25rem,10.5vw,3.2rem) !important;
+    line-height:.92 !important;
+    letter-spacing:-.06em !important;
+    overflow-wrap:break-word;
+  }
+
+  .sol-section-head p{
+    font-size:.76rem !important;
+    line-height:1.75 !important;
+  }
+
+  /* ---------- SOLUTION MAP ---------- */
+  .sol-map{
+    width:100%;
+    min-width:0;
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) !important;
+    gap:12px !important;
+  }
+
+  .sol-card,
+  .sol-card:nth-child(2),
+  .sol-card:nth-child(3),
+  .sol-card:nth-child(4){
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    min-height:250px !important;
+    padding:23px 19px !important;
+    border-radius:19px !important;
+  }
+
+  .sol-card h3{
+    max-width:100%;
+    font-size:1.1rem !important;
+    line-height:1.25;
+  }
+
+  .sol-card p{
+    max-width:100%;
+    font-size:.72rem !important;
+    line-height:1.65 !important;
+  }
+
+  .sol-card .sol-chip{
+    right:17px !important;
+    top:19px !important;
+    font-size:.54rem !important;
+  }
+
+  .sol-num{
+    font-size:2.8rem !important;
+  }
+
+  /* ---------- INDUSTRY MATRIX ---------- */
+  .sol-matrix{
+    width:100%;
+    min-width:0;
+    display:flex !important;
+    flex-direction:column;
+    gap:30px !important;
+  }
+
+  .sol-sticky{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    position:static !important;
+  }
+
+  .sol-sticky h2{
+    width:100%;
+    max-width:100%;
+    font-size:clamp(2.3rem,10.5vw,3.4rem) !important;
+    line-height:.92 !important;
+  }
+
+  .sol-sticky p{
+    width:100%;
+    max-width:100%;
+    font-size:.76rem;
+    line-height:1.75;
+  }
+
+  .sol-list{
+    width:100%;
+    min-width:0;
+  }
+
+  .sol-list-item{
+    width:100%;
+    min-width:0;
+    grid-template-columns:38px minmax(0,1fr) 14px !important;
+    gap:10px !important;
+    padding:19px 0 !important;
+  }
+
+  .sol-list-item h3{
+    font-size:.92rem !important;
+    line-height:1.3;
+  }
+
+  .sol-list-item p{
+    font-size:.67rem !important;
+    line-height:1.6 !important;
+  }
+
+  /* ---------- ARCHITECTURE ---------- */
+  .sol-architecture{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    padding:25px 16px !important;
+    border-radius:20px !important;
+    overflow:hidden !important;
+  }
+
+  .sol-arch-grid{
+    width:100%;
+    min-width:0;
+    grid-template-columns:minmax(0,1fr) !important;
+    gap:11px !important;
+  }
+
+  .sol-node,
+  .sol-node.center{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    min-height:120px !important;
+    padding:19px 15px !important;
+  }
+
+  .sol-node.center{
+    min-height:145px !important;
+  }
+
+  .sol-node h3{
+    font-size:.9rem !important;
+    line-height:1.3;
+    overflow-wrap:break-word;
+  }
+
+  .sol-node p{
+    font-size:.66rem !important;
+    line-height:1.55 !important;
+  }
+
+  .sol-connector{
+    display:none !important;
+  }
+
+  /* ---------- OUTCOMES ---------- */
+  .sol-outcomes{
+    width:100%;
+    min-width:0;
+    grid-template-columns:minmax(0,1fr) !important;
+    gap:12px !important;
+  }
+
+  .sol-outcome{
+    width:100% !important;
+    min-width:0 !important;
+    min-height:205px !important;
+    padding:23px 19px !important;
+    border-radius:19px !important;
+  }
+
+  .sol-outcome strong{
+    font-size:2.15rem !important;
+  }
+
+  .sol-outcome p{
+    font-size:.7rem !important;
+    line-height:1.65 !important;
+  }
+
+  /* ---------- FINAL CTA ---------- */
+  .sol-section:has(.sol-cta){
+    padding-top:5px !important;
+    padding-bottom:65px !important;
+  }
+
+  .sol-cta{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    padding:34px 19px !important;
+    border-radius:21px !important;
+    overflow:hidden !important;
+  }
+
+  .sol-cta-content{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+
+  .sol-cta h2{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    font-size:clamp(2.25rem,10.5vw,3.15rem) !important;
+    line-height:.92 !important;
+    letter-spacing:-.06em !important;
+    overflow-wrap:normal !important;
+    word-break:normal !important;
+  }
+
+  .sol-cta p{
+    width:100%;
+    max-width:100%;
+    font-size:.75rem !important;
+    line-height:1.75 !important;
+  }
+
+  .sol-cta .sol-actions{
+    width:100%;
+    max-width:100%;
+  }
+
+  .sol-cta:after{
+    font-size:4.8rem !important;
+    right:-8px !important;
+    bottom:-10px !important;
+  }
+
+  /* Never allow decorative absolute elements to widen the page */
+  .sol-hero:before,
+  .sol-hero:after,
+  .sol-visual-frame,
+  .sol-orbit,
+  .sol-data-card,
+  .sol-architecture:before,
+  .sol-cta:after{
+    max-width:none;
+  }
+
+  /* No touch-device hover transforms */
+  .sol-btn,
+  .sol-card,
+  .sol-list-item,
+  .sol-node,
+  .sol-outcome,
+  .sol-data-card,
+  .sol-visual-frame{
+    transform:none !important;
+  }
+}
+
+@media(max-width:450px){
+  .sol-wrap{
+    width:calc(100% - 24px) !important;
+  }
+
+  .sol-hero{
+    padding-top:102px !important;
+  }
+
+  .sol-title{
+    font-size:2.24rem !important;
+    letter-spacing:-.068em !important;
+  }
+
+  .sol-hero-visual{
+    height:305px !important;
+    min-height:305px !important;
+  }
+
+  .sol-visual-frame{
+    height:292px !important;
+  }
+
+  .sol-data-card{
+    width:185px !important;
+    max-width:65% !important;
+  }
+
+  .sol-section-head h2,
+  .sol-sticky h2,
+  .sol-cta h2{
+    font-size:2.22rem !important;
+  }
+
+  .sol-cta{
+    padding:31px 17px !important;
+  }
+}
+
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -1154,7 +1641,7 @@ footer{padding:64px 0 22px;border-top:1px solid var(--line);background:#02060d}
   <div class="sol-wrap sol-hero-grid">
     <div class="sol-hero-copy" data-aos="fade-up" data-aos-duration="900">
       <div class="sol-eyebrow">01 / SOLUTION ARCHITECTURE</div>
-      <h1 class="sol-title">MAKE<br><span class="ghost">INTELLIGENCE</span><br>USEFUL.</h1>
+      <h1 class="sol-title">MAKE<br><span class="ghost">AI</span><br>USEFUL.</h1>
       <p>
         Stackly connects perception, reasoning and physical action into practical
         intelligent systems — designed around the environment, workflow and outcome
